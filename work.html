@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ 
+    <title>A Painter's Web</title>
+</head>
+<body>
+    <nav class="navbar">
+      <a href="index.html" class="brand-title">
+        A Painter's Web
+    </a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        <div class="navbar-links">
+          <ul>
+            <li>
+                <a href="Home.html">Home</a>
+         </li>
+         <li>
+          <a href="about-us.html">About</a>
+      </li>
+
+           <li>
+                        <a href="work-item.html">Works-item</a>
+             </li>
+                   
+          </ul>
+        </div>
+      </nav>
+    <!--------------//header----------------->
+    <div class="container">
+      <h1>Works</h1>
+    <div class="img-grid">
+  
+      <a href="work-item.html">
+      <img src="img/paint1.jpg" class="img" width="250px" height="250px">
+      </a>
+      <a href="work-item.html">
+      <img src="img/paint2.jpg" class="img" width="250px" height="250px">
+      </a>
+      <a href="work-item.html">
+      <img src="img/bg-img.jpg" class="img" width="250px" height="250px">
+      </a>
+      <a href="work-item.html">
+      <img src="img/paint-6.jpg" class="img" width="250px" height="250px">
+      </a>
+  
+      <a href="work-item.html">
+      <img src="img/paint1.jpg" class="img" width="250px" height="250px">
+      </a>
+      <a href="work-item.html">
+      <img src="img/paint2.jpg" class="img" width="250px" height="250px">
+      </a>
+
+      </div>
+      
+    </div>
+    <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+});
+</script>
+</body>
+</html>
